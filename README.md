@@ -38,6 +38,11 @@ repo init -u https://github.com/CyanogenMod/android.git -b cm-13.0
 repo sync
 ```
 
+Edit `~/android/system/devices/asus/mofd-common/Android.mk` to include `blackburn` in the list of eligible devices:
+```
+ifneq ($(filter Z00A Z008 blackburn,$(TARGET_DEVICE)),)
+```
+
 ## Local Manifest
 
 Create a file `~/android/system/.repo/local_manifests/roomservice.xml` or update the existing file to contain:
