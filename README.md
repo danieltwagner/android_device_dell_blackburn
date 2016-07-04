@@ -33,7 +33,7 @@ repo sync
 
 ## Local Manifest
 
-Create a file `~/.repo/local_manifest/roomservice.xml` or update the existing file to contain:
+Create a file `~/android/system/.repo/local_manifest/roomservice.xml` or update the existing file to contain:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
