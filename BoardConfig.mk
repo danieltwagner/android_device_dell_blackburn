@@ -58,7 +58,7 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # Hardware
-# BOARD_HARDWARE_CLASS := device/asus/mofd-common/cmhw
+BOARD_HARDWARE_CLASS := device/asus/mofd-common/cmhw
 
 # Healthd
 # BOARD_HAL_STATIC_LIBRARIES := libhealthd.moorefield
@@ -79,7 +79,7 @@ TARGET_INTEL_HWCOMPOSER_FORCE_ONLY_ONE_RGB_LAYER := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 
-# BOARD_EGL_CFG := device/asus/mofd-common/configs/egl.cfg
+BOARD_EGL_CFG := device/asus/mofd-common/configs/egl.cfg
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.opengles.version = 196608 \
@@ -92,7 +92,7 @@ BUILD_WITH_FULL_STAGEFRIGHT := true
 BOARD_USES_VIDEO := true
 
 # Disable IMG RS GPU driver
-# OVERRIDE_RS_DRIVER := libPVRRS.so
+OVERRIDE_RS_DRIVER := libPVRRS.so
 
 # enabled to carry out all drawing operations performed on a View's canvas with GPU for 2D rendering pipeline.
 USE_OPENGL_RENDERER := true
@@ -118,7 +118,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_NUPLAYER_CANNOT_SET_SURFACE_WITHOUT_A_FLUSH := true
 BOARD_USES_WRS_OMXIL_CORE := true
 BOARD_USES_MRST_OMX := true
-# USE_HW_VP8 := true
+USE_HW_VP8 := true
 
 # Media: DRM Protected Video
 BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 1
@@ -165,7 +165,7 @@ BUILD_WITH_SECURITY_FRAMEWORK := chaabi_token
 BUILD_WITH_CHAABI_SUPPORT := true
 
 # SELinux
-# BOARD_SEPOLICY_DIRS += device/asus/mofd-common/sepolicy
+BOARD_SEPOLICY_DIRS += device/asus/mofd-common/sepolicy
 
 # Tap-to-Wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/pci0000:00/0000:00:09.2/i2c-7/7-0038/ftsdclickmode"
