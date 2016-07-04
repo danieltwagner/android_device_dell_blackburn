@@ -33,7 +33,7 @@ BOARD_HAVE_BLUETOOTH := true
 # BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/mofd-common/bluetooth
 
 # Bootloader
-TARGET_OTA_ASSERT_DEVICE := blackburn
+TARGET_OTA_ASSERT_DEVICE := blackburn,mofd_v1
 # bootstub as 2nd bootloader
 TARGET_BOOTLOADER_IS_2ND := true
 
