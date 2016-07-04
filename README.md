@@ -61,7 +61,7 @@ prebuilts/misc/linux-x86/ccache/ccache -M 50G
 repo sync
 source build/envsetup.sh
 breakfast blackburn
-mka
+mka bacon
 ```
 
 ## Troubleshooting
