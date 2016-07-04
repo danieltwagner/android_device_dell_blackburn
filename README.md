@@ -33,7 +33,7 @@ repo sync
 
 ## Local Manifest
 
-Create a file `~/android/system/.repo/local_manifest/roomservice.xml` or update the existing file to contain:
+Create a file `~/android/system/.repo/local_manifests/roomservice.xml` or update the existing file to contain:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
@@ -45,6 +45,7 @@ Create a file `~/android/system/.repo/local_manifest/roomservice.xml` or update 
 
 ```
 cd ~/android/system/
+repo sync
 source build/envsetup.sh
 breakfast blackburn
 mka
