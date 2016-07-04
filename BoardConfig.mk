@@ -61,7 +61,7 @@ endif
 BOARD_HARDWARE_CLASS := device/asus/mofd-common/cmhw
 
 # Healthd
-# BOARD_HAL_STATIC_LIBRARIES := libhealthd.moorefield
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.moorefield
 
 # Houdini: enable ARM codegen for x86
 BUILD_ARM_FOR_X86 := true
@@ -101,8 +101,8 @@ USE_OPENGL_RENDERER := true
 TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 
 # Init
-# TARGET_INIT_VENDOR_LIB := libinit_mofd
-# TARGET_LIBINIT_DEFINES_FILE := device/asus/mofd-common/init/init_mofd.cpp
+TARGET_INIT_VENDOR_LIB := libinit_mofd
+TARGET_LIBINIT_DEFINES_FILE := device/asus/mofd-common/init/init_mofd.cpp
 TARGET_INIT_UMOUNT_AND_FSCK_IS_UNSAFE := true
 
 # Kernel config
